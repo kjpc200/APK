@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .materias-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .materia {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .materia:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona una materia</h1>
+    <div class="materias-container">
+        <div class="materia" onclick="location.href='/html/matematica/mate.html'">Matematicas</div>
+        <div class="materia" onclick="location.href='/html/literatura/lite.html'">Literatura</div>
+        <div class="materia" onclick="location.href='materia3.html'">Ingles</div>
+        <!-- Agrega más divs .materia según tus materias -->
+    </div>
+</body>
+</html>

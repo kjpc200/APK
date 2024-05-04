@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casilla de Niveles - Intermedio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .nivel-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .nivel {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nivel:hover {
+            background-color: #0056b3;
+        }
+        .boton-volver {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #dc3545;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .boton-volver:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un nivel intermedio</h1>
+    <div class="nivel-container">
+        <div class="nivel" onclick="location.href='/html/matematica/niveles/lvl2/lvl1.html'">Nivel 1</div>
+        <div class="nivel" onclick="location.href='/html/matematica/niveles/lvl2/lvl2.html'">Nivel 2</div>
+        <div class="nivel" onclick="location.href='/html/matematica/niveles/lvl2/lvl3.html'">Nivel 3</div>
+        <!-- Agrega más niveles intermedios según sea necesario -->
+    </div>
+    <div class="boton-volver" onclick="location.href='/html/matematica/mate.html'">Volver al Menú Principal</div>
+</body>
+</html>

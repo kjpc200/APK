@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dificultad - Matemáticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .dificultad-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .nivel-dificultad {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nivel-dificultad:hover {
+            background-color: #0056b3;
+        }
+        .boton-salir {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #dc3545;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .boton-salir:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un nivel de dificultad</h1>
+    <div class="dificultad-container">
+        <div class="nivel-dificultad" onclick="location.href='/html/matematica/niveles/facil.html'">Fácil</div>
+        <div class="nivel-dificultad" onclick="location.href='niveles/intermedio.html'">Intermedio</div>
+        <div class="nivel-dificultad" onclick="location.href='dificil.html'">Difícil</div>
+    </div>
+    <div class="boton-salir" onclick="location.href='/html/materias.html'">Salir</div>
+</body>
+</html>

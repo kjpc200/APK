@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dificultad - Matemáticas</title>
+    <title>Dificultad - Ingles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f8f9fa;
+            background-color: #000000;
             padding: 20px;
         }
         h1 {
-            color: #333;
+            color: #ffffff;
         }
         .dificultad-container {
-            display: flex;
+            display: block;
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
@@ -23,8 +23,9 @@
         }
         .nivel-dificultad {
             padding: 20px;
+            margin: 10px;
             border-radius: 5px;
-            background-color: #007bff;
+            background-color: #5c5c5c;
             color: #fff;
             font-size: 18px;
             cursor: pointer;
@@ -34,8 +35,8 @@
             background-color: #0056b3;
         }
         .boton-salir {
-            margin-top: 20px;
-            padding: 10px 20px;
+            margin: 10px;
+            padding: 10px;
             border-radius: 5px;
             background-color: #dc3545;
             color: #fff;
@@ -51,9 +52,9 @@
 <body>
     <h1>Selecciona un nivel de dificultad</h1>
     <div class="dificultad-container">
-        <div class="nivel-dificultad" onclick="location.href='/html/lite/'">Fácil</div>
-        <div class="nivel-dificultad" onclick="location.href='niveles/intermedio.html'">Intermedio</div>
-        <div class="nivel-dificultad" onclick="location.href='dificil.html'">Difícil</div>
+        <div class="nivel-dificultad" onclick="location.href='/html/ingles/niveles/facil.html'">Fácil</div>
+        <div class="nivel-dificultad" onclick="location.href='/html/ingles/niveles/intermedio.html'">Intermedio</div>
+        <div class="nivel-dificultad" onclick="location.href='/html/ingles/niveles/dificil.html'">Difícil</div>
     </div>
     <div class="boton-salir" onclick="location.href='/html/materias.html'">Salir</div>
 </body>

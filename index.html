@@ -8,28 +8,35 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: rgb(255, 255, 255);
         }
         h1 {
             color: #333;
         }
+        .logo {
+            display: block;
+            margin: 20px auto; /* Centra el logo horizontalmente */
+            max-width: 200px; /* Ajusta el ancho del logo según sea necesario */
+        }
         button {
-            padding: 10px 20px;
-            margin: 20px;
-            font-size: 18px;
+            display: block;
+            margin: 20px auto; /* Centra los botones horizontalmente */
+            padding: 30px 50px;
+            font-size: 22px;
             cursor: pointer;
             border-radius: 5px;
             border: none;
-            background-color: #007bff;
+            background-color: #048ff8;
             color: #fff;
         }
         button:hover {
             background-color: #0056b3;
-
         }
     </style>
 </head>
 <body>
-    <h1>¡Bienvenido/a a luisito!</h1>
+    <h1>¡Bienvenido/a!</h1>
+    <img src="/assets/4fd45929-edf0-4ab3-8b60-10b8b4beff51.jfif" alt="Logo" class="logo">
     <button onclick="location.href='/html/materias.html'">Jugar</button>
     <button onclick="location.href='salir.html'">Salir</button>
 </body>

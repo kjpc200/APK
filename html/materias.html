@@ -8,35 +8,78 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f8f9fa;
+            background-color: rgb(182, 167, 148);
             padding: 20px;
         }
         h1 {
-            color: #333;
+            color: #ffffff;
         }
         .materias-container {
-            display: flex;
+            display: block;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 30px;
         }
-        .materia {
+        .materia_mate {
             padding: 20px;
+            margin: 10px;
             border-radius: 5px;
-            background-color: #007bff;
-            color: #fff;
+            background-image: url(../assets/matematicas-e1581735212109.webp);
+            background-size: cover;
+            color: black;
             font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s ease;
             flex-grow: 1;
             max-width: 300px;
         }
-        .materia:hover {
+        .materia_mate:hover {
+            padding: 25px;
+            margin: 10px;
+        }
+
+        .materia_lite {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            background-image: url(../assets/literatura-2-2-e1564965358994.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: whitesmoke;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+        .materia_lite:hover {
+            padding: 25px;
+            margin: 10px;
+        }
+
+        .materia_ing {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            background-image: url(../assets/background-texture-surface-dark-wallpaper-preview.jpg);
+            background-size: cover;
+            background-position: top;
+            color:white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+        .materia_ing:hover {
             background-color: #0056b3;
         }
         .boton-salir {
             padding: 20px;
+            margin: 10px;
             border-radius: 5px;
             background-color: #dc3545;
             color: #fff;
@@ -44,7 +87,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             flex-grow: 1;
-            max-width: 200px;
+            max-width: 300px;
         }
         .boton-salir:hover {
             background-color: #c82333;
@@ -54,9 +97,9 @@
 <body>
     <h1>Selecciona una materia</h1>
     <div class="materias-container">
-        <div class="materia" onclick="location.href='/html/matematica/mate.html'">Matematicas</div>
-        <div class="materia" onclick="location.href='/html/literatura/lite.html'">Literatura</div>
-        <div class="materia" onclick="location.href='/html/ingles/ingles.html'">Ingles</div>
+        <div class="materia_mate" onclick="location.href='/html/matematica/mate.html'">Matematicas</div>
+        <div class="materia_lite" onclick="location.href='/html/literatura/lite.html'">Literatura</div>
+        <div class="materia_ing" onclick="location.href='/html/ingles/ingles.html'">Ingles</div>
         <!-- Agrega más divs .materia según tus materias -->
     </div>
     <div class="materias-container">

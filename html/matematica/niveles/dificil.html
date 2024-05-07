@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel Dificil - Matemáticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #dedede;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .nivel-container {
+            display: block;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .nivel {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nivel:hover {
+            background-color: #4d4d4d;
+        }
+
+        .exit{
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: #ff0000;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un nivel</h1>
+    <div class="nivel-container">
+        <div class="nivel" onclick="location.href='/html/matematica/niveles/lvl3/lvl1.html'">Nivel 1</div>
+        <div class="nivel" onclick="location.href='/html/matematica/niveles/lvl3/lvl2.html'">Nivel 2</div>
+        <div class="nivel" onclick="location.href='/html/matematica/niveles/lvl3/lvl3.html'">Nivel 3</div>
+
+        
+    </div>
+    <div class="exit" onclick="location.href='/html/matematica/mate.html'">Salir</div>
+    
+</body>
+</html>

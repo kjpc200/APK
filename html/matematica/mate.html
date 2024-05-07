@@ -8,14 +8,14 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f8f9fa;
+            background-color: #dedede;
             padding: 20px;
         }
         h1 {
             color: #333;
         }
         .dificultad-container {
-            display: flex;
+            display: block;
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
@@ -23,28 +23,29 @@
         }
         .nivel-dificultad {
             padding: 20px;
+            margin: 10px;
             border-radius: 5px;
-            background-color: #007bff;
+            background-color: #000000;
             color: #fff;
             font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         .nivel-dificultad:hover {
-            background-color: #0056b3;
+            background-color: #4d4d4d;
         }
         .boton-salir {
-            margin-top: 20px;
-            padding: 10px 20px;
+            margin: 10px;
+            padding: 10px;
             border-radius: 5px;
-            background-color: #dc3545;
+            background-color: #ff0000;
             color: #fff;
             font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         .boton-salir:hover {
-            background-color: #c82333;
+            background-color: #4d4d4d;
         }
     </style>
 </head>
@@ -52,8 +53,8 @@
     <h1>Selecciona un nivel de dificultad</h1>
     <div class="dificultad-container">
         <div class="nivel-dificultad" onclick="location.href='/html/matematica/niveles/facil.html'">Fácil</div>
-        <div class="nivel-dificultad" onclick="location.href='niveles/intermedio.html'">Intermedio</div>
-        <div class="nivel-dificultad" onclick="location.href='dificil.html'">Difícil</div>
+        <div class="nivel-dificultad" onclick="location.href='/html/matematica/niveles/intermedio.html'">Intermedio</div>
+        <div class="nivel-dificultad" onclick="location.href='/html/matematica/niveles/dificil.html'">Difícil</div>
     </div>
     <div class="boton-salir" onclick="location.href='/html/materias.html'">Salir</div>
 </body>

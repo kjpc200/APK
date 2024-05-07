@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 1 - Literatura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #dedede;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+        }
+        .pregunta img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        .opciones-container {
+            display: block;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .opcion {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #cd6904;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .opcion:hover {
+            background-color: #b06701;
+        }
+        .botones-container {
+            margin-top: 30px;
+        }
+        .boton {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .boton.salir {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .boton.avanzar {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .mensaje {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nivel 1 - Literatura</h1>
+    <div class="pregunta">
+        <img src="/html/Literatura/niveles/lvl1/1.jfif" alt="29 + 11">
+        <div class="opciones-container">
+            <div class="opcion" onclick="verificarRespuesta(1)">Palabras graves son aquellas en las que la sílaba tónica es la penúltima sílaba.</div>
+            <div class="opcion" onclick="verificarRespuesta(2)">Palabras graves son aquellas que se utilizan en la poesía pero no en la prosa.</div>
+            <div class="opcion" onclick="verificarRespuesta(3)">Palabras graves son aquellas en las que la sílaba tónica es la última sílaba.</div>
+        </div>
+    </div>
+    <div class="mensaje" id="mensaje-correcto" style="display: none;">¡Respuesta correcta!</div>
+    <div class="botones-container">
+        <button class="boton salir" onclick="location.href='/html/literatura/niveles/facil.html'">Salir</button>
+        <button class="boton avanzar" onclick="avanzar()">Avanzar</button>
+    </div>
+
+    <script>
+        function verificarRespuesta(respuesta) {
+            if (respuesta === 1) {
+                document.getElementById('mensaje-correcto').style.display = 'block';
+                setTimeout(function() {
+                    document.getElementById('mensaje-correcto').style.display = 'none';
+                }, 2000); // Ocultar el mensaje después de 2 segundos (2000 milisegundos)
+            } else {
+                alert("Respuesta incorrecta. Intenta de nuevo.");
+            }
+        }
+
+        function avanzar() {
+            location.href = 'lvl2.html'; // Cambia nivel2.html por la siguiente página del nivel 1
+        }
+    </script>
+</body>
+</html>
